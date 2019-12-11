@@ -15,8 +15,10 @@ echo $_GET["gender"];
 echo "<br>";
 echo "<br>";
 echo "Lado:";
-if (isset($_GET["lado"]))
-echo $_GET["lado"];
+if (isset($_GET["lado1"]))
+echo $_GET["lado1"];
+if (isset($_GET["lado2"]))
+echo $_GET["lado2"];
 echo "<br>";
 echo "<br>";
 echo "Pueblo: ";

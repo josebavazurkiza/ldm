@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Vamos a ordenar</p>
+<input type="text" id="equis">
+<br>
+<input type="text" id="igriega">
+<br>
+<input type="text" id="zeta">
+<br>
+
+<button type="button" onclick="ordename()">Ordename</button>
+
+<p id="orden"></p>
+
+<script>
+var x = 12;
+var y = 9;
+var z = 8;
+
+function ordename() { 
+
+    x = document.getElementById("equis").value;
+    y = document.getElementById("igriega").value;
+    z = document.getElementById("zeta").value;
+
+    x = parseInt(x);
+    y = parseInt(y);
+    z = parseInt(z);
+
+if (x<=y) {
+
+    if(x<=z) {
+
+        if(y<=z) {
+        document.getElementById("orden").innerHTML =x+"<="+y+"<="+z;
+
+        }   else
+            document.getElementById("orden").innerHTML =x+"<="+z+"<="+y;
+
+    }   else
+    document.getElementById("orden").innerHTML =z+"<="+x+"<="+y;
+}
+else if (y<=z) {
+
+        if(x<=z) {
+        document.getElementById("orden").innerHTML =y+"<="+x+"<="+z;
+
+        }    else
+            document.getElementById("orden").innerHTML =y+"<="+z+"<="+x;
+
+    }   else 
+        document.getElementById("orden").innerHTML =z+"<="+y+"<="+x;
+}
+
+</script>
+</body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body></body>
+
+<h1>Calculadora</h1>
+
+<p class="solid" id="resultado">0</p>
+
+<input type="text" id="numero1">
+
+<br>
+
+<input type="text" id="numero2">
+
+<br>
+
+<button type="button" onclick="mas()">Sumar</button>
+
+<button type="button" onclick="menos()">Restar</button>
+
+<button type="button" onclick="por()">Multiplicar</button>
+
+<button type="button" onclick="entre()">Dividir</button>
+
+<button type="button" onclick="reset()">Borrar</button>
+
+
+<script>
+
+function mas() {
+    x = document.getElementById("numero1").value;
+    y = document.getElementById("numero2").value; 
+    x = parseInt(x);
+    y = parseInt(y); 
+    document.getElementById("resultado").innerHTML = x + y;
+}
+
+function menos() {
+    x = document.getElementById("numero1").value;
+    y = document.getElementById("numero2").value; 
+    x = parseInt(x);
+    y = parseInt(y); 
+    document.getElementById("resultado").innerHTML = x - y;
+}
+
+function por() {
+    x = document.getElementById("numero1").value;
+    y = document.getElementById("numero2").value; 
+    x = parseInt(x);
+    y = parseInt(y); 
+    document.getElementById("resultado").innerHTML = x * y;
+}
+function entre() {
+    x = document.getElementById("numero1").value;
+    y = document.getElementById("numero2").value; 
+    x = parseInt(x);
+    y = parseInt(y); 
+    document.getElementById("resultado").innerHTML = x / y;
+}
+
+function reset() {    
+    document.getElementById("resultado").innerHTML = 0;
+    document.getElementById("numero1").value = "";
+    document.getElementById("numero2").value = "";
+}
+
+</script>
+
+</body>
+</html>

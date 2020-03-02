@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Piedra, papel y tijera</title>
+<style>
+
+.centrar {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="centrar">
+    <div><img src="img/piedra.jpg" id="piedra" alt="piedra" width="40%"><p>Piedra</p></div>
+    <div><img src="img/papel.jpg" id="papel" alt="papel" width="40%"><p>Papel</p></div>
+    <div><img src="img/tijera.jpg" id="tijera" alt="tijera" width="40%"><p>Tijera</p></div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div>
+    <div class="centrar"><p id="yo"></p></div>  
+    <div class="centrar"><p id="cpu"></p></div>
+    <div class="centrar"><p id="final"></p></div>
+</div>
+
+<script>
+
+/*Botones con imagenes*/
+
+    document.getElementById("piedra").onclick = function() {opcion(0)};
+    document.getElementById("papel").onclick = function() {opcion(1)};
+    document.getElementById("tijera").onclick = function() {opcion(2)};
+
+    function opcion(yo){
+
+            var resultado_texto = ['Empate', 'Ganas', 'Pierdes']
+            var nombre = ['piedra', 'papel', 'tijera']
+
+            cpu = Math.floor((Math.random() * 3));
+            /*Con el array, Seria Piedra,Papel,Tijera. Fila = Jugador, columna = CPU , 0= Empate, 1= Jugador, 2= CPU */
+            jugada = [
+                [0,1,2],
+                [2,0,1],
+                [1,2,0]
+            ];
+
+            resultado = jugada [cpu][yo];
+        /*El texto que mostrara*/
+        texto = [
+            ['Empate', 'El papel tapa la piedra', 'La piedra rompe las tijeras'],
+            ['El papel tapa la piedra', 'Empate', 'Las tijeras cortan el papel'],
+            ['La piedra rompe las tijeras', 'Las tijeras cortan el papel', 'Empate'],
+        ];
+        /*Para que muestre texto*/
+            document.getElementById("yo").innerHTML = ('Tu eliges ' + nombre [yo]) ;
+            document.getElementById("cpu").innerHTML = ('El ordenador elige ' + nombre [cpu]) ;
+            document.getElementById("final").innerHTML = (texto[cpu][yo]);
+
+            console.log("HUMANO " + nombre[yo]);
+            console.log("CPU " + nombre[cpu]);
+            console.log(resultado_texto[resultado]);
+    }
+</script>
+
+</body>
+</html> 

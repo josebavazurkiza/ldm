@@ -17,5 +17,7 @@ https://josebavazurkiza.github.io/ldm/segundaeva/cosa.html
 ###Java
 https://josebavazurkiza.github.io/ldm/juegojava/piepati.html
 
+#Tercera Evaluacion
+
 ###Bootstrap
-https://josebavazurkiza.github.io/ldm/paginajoseba/terceraevahtml/bootstrap/ejercicio1.html
+https://josebavazurkiza.github.io/ldm/terceraevahtml/bootstrap/ejercicio1.html

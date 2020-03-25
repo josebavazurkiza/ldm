@@ -22,3 +22,5 @@ https://josebavazurkiza.github.io/ldm/juegojava/piepati.html
 ###Bootstrap
 Ejercicio 1
 https://josebavazurkiza.github.io/ldm/terceraevahtml/bootstrap/ejercicio1.html
+Ejercicio 2
+https://josebavazurkiza.github.io/ldm/terceraevahtml/bootstrap/ejercicio2.html

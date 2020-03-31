@@ -12,14 +12,14 @@
 <body>
 
 <div class="container mt-3">
-<form action="/echo.php">
+<form action="/echo.php" method="post">
     <select name="ciudad" class="custom-select mb-3">
     <option selected>De donde eres</option>
     <option value="mendaro">Mendaro</option>
     <option value="elgoibar">Elgoibar</option>
     <option value="eibar">Eibar</option>
     </select>
-</form>
+
 
 <br>
 
@@ -28,14 +28,14 @@
       <label class="custom-control-label" for="switch1">¿Viajas mucho?</label>
     </div>
     <br>
-  </form>
+  
 
 
 <label for="email">Email:</label>
 <input type="email" class="form-control" placeholder="Email" id="email">
 <label for="pwd">Contraseña:</label>
 <input type="password" class="form-control" placeholder="Contraseña" id="contra">
-</form> 
+ 
 
 <br>
 
@@ -75,7 +75,7 @@
 <button type="submit" class="btn btn-primary" value="enviar">Enviar</button>
 
 </div>
-
+</form>
 
 
 </body>

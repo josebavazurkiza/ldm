@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Formulario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+<form action="echo.php">
+    <select name="ciudad" class="custom-select mb-3">
+    <option selected>De donde eres</option>
+    <option value="mendaro">Mendaro</option>
+    <option value="elgoibar">Elgoibar</option>
+    <option value="eibar">Eibar</option>
+    </select>
+</form>
+
+<br>
+
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="switch1" name="viajas">
+      <label class="custom-control-label" for="switch1">¿Viajas mucho?</label>
+    </div>
+    <br>
+  </form>
+
+
+<label for="email">Email:</label>
+<input type="email" class="form-control" placeholder="Email" id="email">
+<label for="pwd">Contraseña:</label>
+<input type="password" class="form-control" placeholder="Contraseña" id="contra">
+</form> 
+
+<br>
+
+
+<div><p>¿Que comida del listado te gusta?</p></div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="check1" name="patata">
+      <label class="custom-control-label" for="check1">Patatas</label><br>
+    </div>
+      <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="check2" name="tomate">
+      <label class="custom-control-label" for="check2">Tomate</label><br>
+      </div>
+      <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="check3" name="lechuga">
+      <label class="custom-control-label" for="check3">Lechuga</label><br>
+      </div>
+    </div>
+ 
+
+<br>
+<br>
+
+<div class="form-group">
+<label for="comentario">¿Algun comentario para mejorar la pagina?</label>
+<textarea class="form-control" rows="5" id="comentario"></textarea>
+</div> 
+
+<label for="info">¿Quieres recibir info en algun email?</label>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Email" id="info" name="info">
+  <div class="input-group-append">
+    <span class="input-group-text">@gmail.com</span>
+  </div>
+</div> 
+
+<button type="submit" class="btn btn-primary" value="enviar">Enviar</button>
+
+</div>
+
+
+
+</body>
+</html>

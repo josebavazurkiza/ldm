@@ -28,3 +28,7 @@ https://josebavazurkiza.github.io/ldm/terceraevahtml/bootstrap/ejercicio2.html
 
 #Formulario
 https://josebavazurkiza.github.io/ldm/terceraevahtml/bootstrap/formulario.html
+
+#Pagina final
+
+https://josebavazurkiza.github.io/ldm/terceraevahtml/bootstrap/paginafinaljoseba/index.html
